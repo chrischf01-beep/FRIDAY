@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.cursorBlinking": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
+}

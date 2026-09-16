@@ -1,0 +1,3 @@
+# Paste your free Google Gemini API key here if you wish to use your own personal key.
+# Get a free key in 10 seconds from: https://aistudio.google.com/app/apikey
+# If left empty, FRIDAY will automatically use the built-in system key and offline knowledge base!

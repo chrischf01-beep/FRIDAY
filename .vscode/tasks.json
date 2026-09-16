@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "FRIDAY: AI Website Generator & Code Architect",
+      "type": "shell",
+      "command": "node",
+      "args": ["friday_cli.js", "${input:websitePrompt}"],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "FRIDAY: Launch Terminal Companion",
+      "type": "shell",
+      "command": "node",
+      "args": ["friday_cli.js"],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "FRIDAY: Install Recommended Web Extensions",
+      "type": "shell",
+      "command": "code --install-extension ritwickdey.LiveServer && code --install-extension esbenp.prettier-vscode && code --install-extension bradlc.vscode-tailwindcss",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "websitePrompt",
+      "type": "promptString",
+      "description": "Describe the website or software for FRIDAY to construct:",
+      "default": "Modern SaaS landing page with dark neon theme, pricing table, and interactive animations"
+    }
+  ]
+}

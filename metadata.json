@@ -1,0 +1,6 @@
+{
+  "name": "FRIDAY Executive Desktop HUD",
+  "description": "Native Windows 10 desktop application and background companion for Boss Chris, running in the system tray with global hotkeys, academic tutoring, and system telemetry.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

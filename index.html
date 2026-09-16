@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="dark bg-[#030712] text-slate-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRIDAY Executive Desktop HUD</title>
+    <meta name="description" content="Native Windows 10 desktop application and background companion for Boss Chris, running in the system tray with global hotkeys, academic tutoring, and system telemetry." />
+    <meta property="og:title" content="FRIDAY Executive Desktop HUD" />
+    <meta property="og:description" content="Native Windows 10 desktop application and background companion for Boss Chris, running in the system tray with global hotkeys, academic tutoring, and system telemetry." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#030816" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon-192.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#020510] text-cyan-100 overflow-hidden select-none">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration note:', err));
+        });
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
